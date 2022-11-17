@@ -1,0 +1,64 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/main/main",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false //去掉app+h5顶部导航
+				}
+			}
+		},
+		{
+			"path": "pages/login/mylogin",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"height": "100rpx",
+		"color": "#d8d8d8",
+		"selectedColor": "#d28c00",
+		"backgroundColor": "#f8f8f8",
+		"borderStyle": "white",
+		"fontSize": "30rpx",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/main/main"
+			},
+			{
+				"text": "蛋糕",
+				"pagePath": "pages/login/mylogin"
+			}, {
+				"text": "面包",
+				"pagePath": "pages/login/login"
+			}
+			// , {
+			// 	"text": "小食",
+			// 	"pagePath": "pages/food/food"
+			// }
+		]
+	}
+
+}
